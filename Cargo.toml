@@ -1,0 +1,15 @@
+[package]
+name = "horizon-sodium"
+version = "0.9.2+mc26.3"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT"
+description = "A minimal native Horizon Mixins mod"
+
+[lib]
+# This exact source is also injected as a same-crate module by horizon-mixins.
+path = "mixins/sodium/runtime.rs"
+
+[workspace]
+members = ["tools/audit"]
+resolver = "2"
